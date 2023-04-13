@@ -14,9 +14,19 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
-      margin-top: 1.5rem;
+      position: absolute;
       font-size: 17px;
       text-align: center;
+      bottom: -85%;
+      margin-inline: 1.5rem;
+      line-height: 1.5;
+      height: 0;
+    }
+    @media (min-width: 1140px) {
+      .attribution {
+        top: 85%;
+        left: 30%;
+      }
     }
 
     .attribution a {

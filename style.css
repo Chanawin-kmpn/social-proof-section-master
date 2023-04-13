@@ -65,6 +65,10 @@ body {
     font-weight: var(--fw-medium);
 }
 
+main {
+    position: inherit;
+}
+
 
 img:not(.reviewer img, .star-image img) {
     position: absolute;
@@ -112,6 +116,7 @@ img:not(.reviewer img, .star-image img) {
 .wrapper {
     padding: 1.5rem;
     max-width: 69.375rem;
+    overflow: auto;
 }
 
 
