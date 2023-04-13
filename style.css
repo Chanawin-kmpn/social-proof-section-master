@@ -58,34 +58,17 @@ svg {
 /* Body and Body background */
 
 body {
-    position: relative;
     line-height: .8;
     font-family: var(--font-family);
     font-size: var(--fs-400);
     font-weight: var(--fw-medium);
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
 }
 
 main {
     position: inherit;
-}
-
-
-img:not(.reviewer img, .star-image img) {
-    position: absolute;
-    z-index: -1;
-    background-repeat: no-repeat;
-}
-
-.bg-top {
-    top: 0;
-}
-
-.bg-bottom {
-    bottom: 0;
-}
-
-.bg-desktop {
-    display: none;
 }
 
 /* Body and Body background resposive*/
@@ -95,19 +78,7 @@ img:not(.reviewer img, .star-image img) {
         display: grid;
         place-content: center;
         min-height: 100vh;
-    }
-
-    .bg-moblie {
-        display: none
-    }
-
-    .bg-desktop {
-        display: revert;
-    }
-
-    .bg-bottom {
-        bottom: 0;
-        right: 0;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
     }
 }
 
@@ -308,4 +279,17 @@ img:not(.reviewer img, .star-image img) {
     .review-card:last-child {
         align-self: flex-end;
     }
+}
+
+.attribution {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-inline: 1.5rem;
+    line-height: 1.5;
+    height: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
