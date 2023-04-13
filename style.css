@@ -86,7 +86,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* Body and Body background resposive*/
 
-@media (min-width: 600px) {
+@media (min-width: 1050px) {
     body {
         display: grid;
         place-content: center;
@@ -122,7 +122,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* Wrapper resposive */
 
-@media (min-width: 600px) {
+@media (min-width: 1050px) {
     .wrapper {
         display: grid;
         grid-template-columns: 445px 1fr;
@@ -130,7 +130,7 @@ img:not(.reviewer img, .star-image img) {
         grid-template-areas:
             "about rate"
             "review review";
-        gap: 71px 125px;
+        /* gap: 71px 125px; */
         padding: 0;
         margin-inline: 1.5rem;
     }
@@ -161,7 +161,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* About section responsive */
 
-@media (min-width: 600px) {
+@media (min-width: 1050px) {
     .about-section {
         grid-area: about;
         max-width: 100%;
@@ -205,7 +205,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* Rate section responsive */
 
-@media (min-width: 600px) {
+@media (min-width: 1050px) {
     .rate-section {
         display: grid;
         grid-area: rate;
@@ -279,7 +279,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* Review section responsive */
 
-@media (min-width: 600px) {
+@media (min-width: 1050px) {
     .review-section {
         grid-area: review;
         flex-direction: row;
