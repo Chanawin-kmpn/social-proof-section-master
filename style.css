@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400 500 700;
     font-display: fallback;
-    src: url(/fonts/League-spartan-optimize.woff2) format('woff');
+    src: url(fonts/League-spartan-optimize.woff2) format('woff');
 }
 
 :root {
