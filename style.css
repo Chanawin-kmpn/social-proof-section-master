@@ -138,6 +138,7 @@ img:not(.reviewer img, .star-image img) {
         gap: 71px 125px;
         padding: 0;
         margin-inline: 1.5rem;
+        overflow: visible;
     }
 }
 
