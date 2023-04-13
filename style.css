@@ -86,7 +86,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* Body and Body background resposive*/
 
-@media (min-width: 37.5rem) {
+@media (min-width: 600px) {
     body {
         display: grid;
         place-content: center;
@@ -122,15 +122,15 @@ img:not(.reviewer img, .star-image img) {
 
 /* Wrapper resposive */
 
-@media (min-width: 37.5rem) {
+@media (min-width: 600px) {
     .wrapper {
         display: grid;
-        grid-template-columns: 27.8125rem 1fr;
-        grid-template-rows: 15.3125rem 16.625rem;
+        grid-template-columns: 445px 1fr;
+        grid-template-rows: 245px 266px;
         grid-template-areas:
             "about rate"
             "review review";
-        gap: 4.4375rem 7.8125rem;
+        gap: 71px 125px;
         padding: 0;
         margin-inline: 1.5rem;
     }
@@ -161,7 +161,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* About section responsive */
 
-@media (min-width: 37.5rem) {
+@media (min-width: 600px) {
     .about-section {
         grid-area: about;
         max-width: 100%;
@@ -205,13 +205,13 @@ img:not(.reviewer img, .star-image img) {
 
 /* Rate section responsive */
 
-@media (min-width: 37.5rem) {
+@media (min-width: 600px) {
     .rate-section {
         display: grid;
         grid-area: rate;
         justify-items: center;
-        max-width: 100%;
         padding: 1.5rem 0;
+        min-width: 33.75rem;
     }
 
     .rate-section .rate {
@@ -279,7 +279,7 @@ img:not(.reviewer img, .star-image img) {
 
 /* Review section responsive */
 
-@media (min-width: 37.5rem) {
+@media (min-width: 600px) {
     .review-section {
         grid-area: review;
         flex-direction: row;
